@@ -76,9 +76,9 @@ namespace RepoLayer.Services
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                throw ex;
+                throw e;
             }
         }
         // To View All Employee Details
@@ -125,7 +125,7 @@ namespace RepoLayer.Services
                 EmployeeModel emp = new EmployeeModel();
                 using (SqlConnection con = new SqlConnection(configuration["ConnectionStrings:EmpPayrollMVC"]))
                 {
-                    string sqlQuery = "SELECT * FROM employee_payroll WHERE Emp_id= " + id;
+                    string sqlQuery = "SELECT * FROM tblEmployeeInfo WHERE Emp_id= " + id;
                     SqlCommand cmd = new SqlCommand(sqlQuery, con);
                     con.Open();
                     SqlDataReader rdr = cmd.ExecuteReader();

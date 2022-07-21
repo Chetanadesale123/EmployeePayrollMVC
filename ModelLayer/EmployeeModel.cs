@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace ModelLayer
 {
     public class EmployeeModel
     {
+        [Key]
         public int Emp_id { get; set; }
         public string Emp_name { get; set; }
         public string Profileimage { get; set; }

@@ -53,9 +53,9 @@ namespace BusinessLayer.Services
             {
                 return this.employeeRL.GetEmployeeData(id);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                throw ex;
+                throw e;
             }
         }
         public string UpdateEmployee(EmployeeModel emp)
