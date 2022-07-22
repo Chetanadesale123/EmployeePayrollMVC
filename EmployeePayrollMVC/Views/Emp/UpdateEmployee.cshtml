@@ -1,17 +1,10 @@
 ﻿@model ModelLayer.EmployeeModel
 
 @{
-    Layout = null;
+    ViewData["Title"] = "UpdateEmployee";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>UpdateEmployee</title>
-</head>
-<body>
+<h1>UpdateEmployee</h1>
 
 <h4>EmployeeModel</h4>
 <hr />
@@ -73,5 +66,3 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-</body>
-</html>

@@ -49,7 +49,7 @@
                 @Html.DisplayFor(modelItem => item.Emp_name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Profileimage)
+                <img src="@Url.Content(item.Profileimage)"  />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Gender)
